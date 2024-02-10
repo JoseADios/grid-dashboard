@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section class="sidebar">
+            <div class="dash">
+                <div class="dash-enc">
+                    <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-layout-dashboard" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4h6v8h-6z" />
+                        <path d="M4 16h6v4h-6z" />
+                        <path d="M14 12h6v8h-6z" />
+                        <path d="M14 4h6v4h-6z" />
+                    </svg>
+                    <h2 id="dash-title">Dashboard</h2>
+                </div>
+
+                <div class="dash-menu">
+                    <div>
+                        <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                        </svg>
+                        <p>Home</p>
+                    </div>
+
+                    <div>
+                        <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-user-scan" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 9a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
+                            <path d="M4 16v2a2 2 0 0 0 2 2h2" />
+                            <path d="M16 4h2a2 2 0 0 1 2 2v2" />
+                            <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
+                            <path d="M8 16a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2" />
+                        </svg>
+                        <p>Profile</p>
+                    </div>
+
+                    <div>
+                        <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-message" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M8 9h8" />
+                            <path d="M8 13h6" />
+                            <path
+                                d="M18 4a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-5l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12z" />
+                        </svg>
+                        <p>Messages</p>
+                    </div>
+
+                    <div>
+                        <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M12 7v5l3 3" />
+                        </svg>
+                        <p>History</p>
+                    </div>
+
+                    <div>
+                        <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-list-check" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+                            <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+                            <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+                            <path d="M11 6l9 0" />
+                            <path d="M11 12l9 0" />
+                            <path d="M11 18l9 0" />
+                        </svg>
+                        <p>Tasks</p>
+                    </div>
+                    <div>
+                        <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-users-group" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+                            <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+                            <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+                        </svg>
+                        <p>Communities</p>
+                    </div>
+                </div>
+
+                <div class="dash-settings">
+                    <div>
+                        <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-settings" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        </svg>
+                        <p>Settings</p>
+                    </div>
+
+                    <div>
+                        <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-help-hexagon" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z" />
+                            <path d="M12 16v.01" />
+                            <path d="M12 13a2 2 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
+                        </svg>
+                        <p>Support</p>
+                    </div>
+                    <div>
+                        <svg id="dash-ico" xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-shield-check" width="24" height="24" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
+                            <path d="M15 19l2 2l4 -4" />
+                        </svg>
+                        <p>Privacy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header>
+            <div class="fila-1">
+                <div class="search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <input type="text" name="search-bar" id="bar">
+                </div>
+                <div class="user-cont">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                        <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                    </svg>
+                    <img class="perfil-img" src="img/perfil-animado.jpg" alt="perfil">
+                    <h3>Morgan Oakley</h3>
+                </div>
+            </div>
+            <div class="fila-2">
+                <div class="welcome">
+                    <img class="perfil-img2" src="img/perfil-animado.jpg" alt="perfil">
+                    <div class="welcome-text">
+                        <p>Hi there,</p>
+                        <h3>Morgan Oakley (@morgan)</h3>
+                    </div>
+                </div>
+                <div class="butns">
+
+                    <div class="d-btn">
+                        <input class="btn-nav" type="button" value="New">
+                    </div>
+
+                    <div class="d-btn">
+                        <input class="btn-nav" type="button" value="Upload">
+                    </div>
+
+                    <div class="d-btn">
+                        <input class="btn-nav" type="button" value="Share">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <div class="base-projects">
+                <h3>Your Projects</h3>
+                <section class="projects">
+                    <div class="project1">
+                        <h5>Super Cool Project</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum nihil mollitia
+                            magni, voluptatem
+                            dicta? Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="project-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24"
+                                height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-plus"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                <path d="M16 19h6" />
+                                <path d="M19 16v6" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M8.7 10.7l6.6 -3.4" />
+                                <path d="M8.7 13.3l6.6 3.4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project2">
+                        <h5>Less Cool Project</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, non. Inventore quia repellat
+                            unde
+                            praesentium consequatur repudiandae maxime earum ratione corporis. Lorem </p>
+                        <div class="project-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24"
+                                height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-plus"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                <path d="M16 19h6" />
+                                <path d="M19 16v6" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M8.7 10.7l6.6 -3.4" />
+                                <path d="M8.7 13.3l6.6 3.4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project3">
+                        <h5>Impossible App</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laboriosam dicta soluta
+                            similique
+                            illum? Adipisci, expedita laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorem,
+                            voluptatibus!</p>
+                        <div class="project-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24"
+                                height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-plus"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                <path d="M16 19h6" />
+                                <path d="M19 16v6" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M8.7 10.7l6.6 -3.4" />
+                                <path d="M8.7 13.3l6.6 3.4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project4">
+                        <h5>Easy Peasy App</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, rerum! Lorem, ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Illo, dolore?</p>
+                        <div class="project-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24"
+                                height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-plus"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                <path d="M16 19h6" />
+                                <path d="M19 16v6" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M8.7 10.7l6.6 -3.4" />
+                                <path d="M8.7 13.3l6.6 3.4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project5">
+                        <h5>Ad Blocker</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum nihil mollitia
+                            magni, voluptatem
+                            dicta?</p>
+                        <div class="project-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24"
+                                height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-plus"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                <path d="M16 19h6" />
+                                <path d="M19 16v6" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M8.7 10.7l6.6 -3.4" />
+                                <path d="M8.7 13.3l6.6 3.4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project6">
+                        <h5>Money Maker</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit molestias, dignissimos eveniet
+                            quod
+                            consequuntur molestiae atque eius ut eos maiores.</p>
+                        <div class="project-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24"
+                                height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-plus"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M12 18c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                <path d="M16 19h6" />
+                                <path d="M19 16v6" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M8.7 10.7l6.6 -3.4" />
+                                <path d="M8.7 13.3l6.6 3.4" />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="rigth-content">
+                <div class="announcements-base">
+                    <h3>Announcements</h3>
+                    <div class="announcements">
+                        <div class="ann">
+                            <h5>Site Maintenance</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis maiores...
+                            </p>
+                        </div>
+
+                        <div class="ann">
+                            <h5>Community Share Day</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis maiores adipisci...
+                            </p>
+                        </div>
+
+                        <div class="ann">
+                            <h5>Updated Privacy Policy</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, commodi?...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-base">
+                    <h3>Trending</h3>
+                    <div class="trendings">
+                        <div class="trend">
+                            <img src="img/perfil-animado2.jpg" alt="">
+                            <div>
+                                <b>@tegan</b>
+                                <p>World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trend">
+                            <img src="img/perfil-animado3.jpg" alt="">
+                            <div>
+                                <b>@morgan</b>
+                                <p>Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trend">
+                            <img src="img/perfil-animado4.jpg" alt="">
+                            <div>
+                                <b>@kendall</b>
+                                <p>Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="trend">
+                            <img src="img/perfil-animado5.jpg"
+                                alt="">
+                            <div>
+                                <b>@alex</b>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
