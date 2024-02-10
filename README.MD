@@ -13,6 +13,10 @@ The styling of the dashboard is done using CSS. The search bar (#bar) has a cust
 - Responsive design using CSS Grid 📐
 - Custom styled search bar and user profile section 👤
 
+## 🌐 Live Demo
+
+Check out the live demo of the project [here](https://joseadios.github.io/grid-dashboard/).
+
 ## 💾 Installation
 
 To clone this repository, use the following command in your terminal:
