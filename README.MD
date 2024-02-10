@@ -22,4 +22,4 @@ Check out the live demo of the project [here](https://joseadios.github.io/grid-d
 To clone this repository, use the following command in your terminal:
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/JoseADios/grid-dashboard.git
